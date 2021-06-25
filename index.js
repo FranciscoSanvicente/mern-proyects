@@ -11,6 +11,9 @@ conectarDB();
 // habilitar cors
 app.use(cors());
 
+// Directorio Público
+app.use( express.static('public') );
+
 // Habilitar express.json
 app.use( express.json({ extended: true }));
 
